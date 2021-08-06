@@ -1,0 +1,140 @@
+/* Icones */
+
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css');
+
+@import url('owl.carousel.min.css');
+
+@import url('owl.theme.default.min.css');
+
+/* Reset e variáveis */
+
+:root{
+  --vermelho: #E50914;
+  --preto: #141414;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*:last-child{
+  margin-right: 0;
+}
+
+button, a{
+  cursor: pointer;
+}
+
+/* Cabeçalho */
+
+body{
+  background-color: var(--preto);
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+}
+
+.logo{
+  text-transform: uppercase;
+  color: var(--vermelho);
+  font-family: Sans-Serif;
+  font-weight: 1000;
+  font-size: 25pt;
+}
+
+nav > a{
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+nav > a:hover{
+  color: #fff;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header{
+  padding: 25px;
+}
+
+/* Filme principal */
+
+.filme-principal{
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,.5), rgb(0,0,0)), url('../img/capa-house.jpg');
+  height: 35vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.filme-principal .container{
+  width: 70%;
+}
+
+.filme-desc{
+  margin-top: 10px;
+  margin-bottom: 2.5vh;
+}
+
+.filme-titulo{
+  margin-top: 5vh;
+  text-transform: uppercase;
+  font-size: 6vw;
+  font-family: Arial, Sans-Serif;
+}
+
+.buttons > button{
+  background-color: rgba(109,109,110,.5);
+  border: none;
+  color: #fff;
+  margin-right: 25px;
+  padding: 15px 30px;
+  border-radius: 2px;
+  transition: .3s ease all;
+}
+
+.buttons > button:first-child{
+  color: #000;
+  background-color: rgba(255,255,255);
+}
+
+.buttons > button:hover{
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+
+.buttons > button > i {
+  margin-right: 8px;
+}
+
+/* Carousel de filmes */
+
+.carousel-filmes{
+  margin-top: 30px;
+}
+
+/* Responsividade */
+
+@media only screen and (max-width: 600px) {
+  .buttons > button{padding: 7.5px 15px;}
+  .filme-principal .container{width: 100%;}
+  header .container{display: flex;flex-direction: column;}
+  nav{margin-top: 10px;}
+  header{padding-top: 10px;}
+}
+
+@media screen and (min-width:900px){
+  .filme-desc{
+    width: 80%;
+  }
+}
