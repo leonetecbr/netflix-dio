@@ -31,14 +31,13 @@ button, a{
 
 body{
   background-color: var(--preto);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Sans-Serif;
   color: #fff;
 }
 
 .logo{
   text-transform: uppercase;
   color: var(--vermelho);
-  font-family: Sans-Serif;
   font-weight: 1000;
   font-size: 25pt;
 }
@@ -90,7 +89,6 @@ header{
   margin-top: 5vh;
   text-transform: uppercase;
   font-size: 6vw;
-  font-family: Arial, Sans-Serif;
 }
 
 .buttons > button{
@@ -119,8 +117,10 @@ header{
 
 /* Carousel de filmes */
 
-.carousel-filmes{
-  margin-top: 30px;
+h3{
+  margin: 15px 5px;
+  margin-right: 0;
+  font-size: 15pt;
 }
 
 /* Responsividade */
